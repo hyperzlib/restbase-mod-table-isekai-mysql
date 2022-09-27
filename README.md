@@ -1,4 +1,4 @@
-# restbase-mod-table-isekai-mysql [![Build Status](https://travis-ci.org/hyperzlib/restbase-mod-table-isekai-mysql.svg?branch=master)](https://travis-ci.org/wikimedia/restbase-mod-table-isekai-mysql)
+# restbase-mod-table-isekai-mysql [![Build Status](https://travis-ci.org/hyperzlib/restbase-mod-table-isekai-mysql.svg?branch=master)](https://travis-ci.org/hyperzlib/restbase-mod-table-isekai-mysql)
 
 An MySQL back-end module for [RESTBase](https://github.com/wikimedia/restbase)
 conforming to the [RESTBase storage
