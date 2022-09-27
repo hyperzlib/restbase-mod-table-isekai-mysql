@@ -1,0 +1,57 @@
+{
+  "authors": [{
+    "name": "Wikimedia Service Team",
+    "email": "services@wikimedia.org"
+  }, {
+    "name": "Hyperzlib",
+    "email": "hyperzlib@outlook.com"
+  }],
+  "bugs": {
+    "url": "https://phabricator.wikimedia.org/tag/restbase/"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "bluebird": "^3.7.2",
+    "extend": "^3.0.2",
+    "fast-json-stable-stringify": "^2.1.0",
+    "generic-pool": "^3.4.2",
+    "js-yaml": "^3.13.1",
+    "lru-cache": "^4.1.3",
+    "mysql": "^2.18.1",
+    "restbase-mod-table-spec": "^1.2.0"
+  },
+  "deprecated": false,
+  "description": "RESTBase table storage using mysql for testing purposes",
+  "devDependencies": {
+    "coveralls": "^3.1.0",
+    "eslint-config-wikimedia": "^0.13.1",
+    "eslint-plugin-jsdoc": "^20.4.0",
+    "eslint-plugin-json": "^1.4.0",
+    "mocha": "^6.2.3",
+    "mocha-lcov-reporter": "^1.3.0",
+    "nyc": "^14.1.1"
+  },
+  "homepage": "https://github.com/hyperzlib/restbase-mod-table-isekai-mysql",
+  "keywords": [
+    "REST",
+    "API",
+    "storage",
+    "buckets",
+    "tables",
+    "mysql"
+  ],
+  "license": "Apache-2.0",
+  "main": "index.js",
+  "name": "restbase-mod-table-isekai-mysql",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/hyperzlib/restbase-mod-table-isekai-mysql.git"
+  },
+  "scripts": {
+    "coverage": "[ -f test_db ] && rm test_db; nyc --reporter=lcov _mocha",
+    "coveralls": "cat ./coverage/lcov.info | coveralls",
+    "lint": "eslint --max-warnings 0 --ext .js --ext .json .",
+    "test": "npm run lint; mocha"
+  },
+  "version": "0.1.2"
+}

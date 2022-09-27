@@ -1,0 +1,16 @@
+type: restbase-mysql
+host: localhost
+database: test_db
+username: mysql
+password: mysql
+show_sql: true
+retry_delay: 100
+storage_groups:
+  - name: unused.domain
+    domains: unused.domain
+  - name: test.domains
+    domains:
+      - "/test\\..*\\.org/"
+      - "/test\\.local$/"
+  - name: default.group
+    domains: /./
